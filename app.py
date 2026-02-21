@@ -194,10 +194,6 @@ def sidebar_settings():
         st.title("⚙️ 設定")
         
         st.divider()
-        st.markdown("### 🛠️ 開発者メニュー")
-        if st.checkbox("内部データを表示する"):
-            st.json(st.session_state)
-            
         if st.button("🔄 最初からやり直す"):
             st.session_state.messages = []
             st.session_state.facts = {}
