@@ -191,9 +191,6 @@ def init_session_state():
 def sidebar_settings():
     """Sidebar for API key and navigation (debug)."""
     with st.sidebar:
-        st.title("⚙️ 設定")
-        
-        st.divider()
         if st.button("🔄 最初からやり直す"):
             st.session_state.messages = []
             st.session_state.facts = {}
